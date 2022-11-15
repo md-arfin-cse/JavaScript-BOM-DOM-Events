@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>Home</li>
+      <li>Product</li>
+      <li>About us</li>
+    </ul>
+
+    <script>
+
+        let parent = document.getElementById("menu");
+
+        let item = document.createElement("li");
+        item.textContent = "Services";
+
+        let replace = parent.firstElementChild.nextElementSibling
+
+        parent.replaceChild(item, replace);
+
+
+
+    </script>
+
+
+
+
+
+  </body>
+</html>

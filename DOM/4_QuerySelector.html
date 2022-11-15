@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="Intro">Heading 1</h2>
+    <div id="div1">
+        <p class="Intro">Paragraph 1</p>
+        <h2 class="Intro">Heading 2</h2>
+        <p>Paragraph 2</p>
+        <h2>Heading 3</h2>
+        <p class="Intro">Paragraph 3</p>
+    </div>
+
+    <script>
+        // let elem = document.querySelector("p.Intro");
+        let elem = document.querySelectorAll("p.Intro");
+        // elem.innerHTML = "Hello"; //not working
+        console.log(elem);
+
+        for(let i = 0; i<elem.length; i++){
+            elem[i].innerHTML = "hello";
+        }
+
+
+    </script>
+</body>
+</html>

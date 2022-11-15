@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button id="btn">Clear Interval</button>
+
+
+
+    <script>
+        // let timeOutId = setTimeout(myFunction, 5000);
+
+        // function myFunction(){
+        //     alert("Please close the Window")
+        // }
+
+        // setInterval(fun, 2000);
+
+        // function fun(){
+        //     alert("Please close the Window")
+        // }
+
+        let t1 = setInterval(fun,2000);
+        function fun(){
+            console.log("Please Subscribe....");
+            // alert("Please Subscribe....")
+        }
+        let btn1 = document.getElementById("btn");
+
+        btn1.addEventListener('click', function(){
+            clearInterval(t1)
+        })
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

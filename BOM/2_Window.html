@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--     
+    <style>
+        body{
+            background-color: red;
+        }
+
+        
+    </style> -->
+
+    </head>
+<body>
+    <button id="btn1">Google</button>
+    <button id="btn2">Yahoo</button>
+    <button id="btn3">Close</button>
+    
+    
+    
+    
+    <script>
+
+        // console.log(innerHeight);
+        // console.log(innerWidth);
+
+        // console.log(outerHeight);
+        // console.log(outerWidth);
+
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+        
+        let url = "https://www.google.com";
+        let features = "height = 600, width=600";
+        let win;
+
+        btn1.addEventListener('click',function(){
+            win = window.open(url, "Google", features)
+        });
+
+        // let url2 = "https://www.yahoo.com";
+        // let features2 = "height = 600, width=600";
+
+        // btn2.addEventListener('click',function(){
+        //     window.open(url2, "google", features2)
+        // })
+
+        btn2.addEventListener('click' , function(){
+            window.open('https://www.yahoo.com','Google', features);
+        });
+
+        btn3.addEventListener('click',function(){
+            win.close();
+        })
+
+
+
+
+
+    </script>
+</body>
+</html>

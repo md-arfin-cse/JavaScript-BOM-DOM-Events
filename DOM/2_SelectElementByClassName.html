@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+
+        <li class="cl pi">List 1</li>      
+        <li id="first">List 2</li>
+        <li class="cl">List 3</li>
+    </ul>
+    
+    <script>
+        let elem = document.getElementsByClassName("cl pi"); //multiple classes
+        for(let i = 0; i < elem.length; i++){
+            elem[i].innerHTML = "<p> Hello I am Arfin! </p>";
+        }
+       
+       
+       
+        // console.log(elem.length);
+    </script>
+</body>
+</html>

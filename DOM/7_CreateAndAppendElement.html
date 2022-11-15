@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="intro">
+
+    <p id="p1">Hello This is a p tag</p>
+</div>
+
+<script>
+let elem = document.getElementById("intro");
+
+let h1 = document.createElement("h1");
+
+h1.className = "try pi";
+h1.id = "intro1";
+
+// let text = document.createTextNode("This is a h1 tag");
+// h1.appendChild(text);
+
+// elem.appendChild(h1);
+
+// document.body.appendChild(h1);
+
+// h1.textContent = "content added";
+// document.body.appendChild(h1)
+
+let pra = document.getElementById("p1");
+console.log(pra.textContent);
+
+</script>
+</body>
+</html>

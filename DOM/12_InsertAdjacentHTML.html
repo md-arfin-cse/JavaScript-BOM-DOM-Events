@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- before begin -->
+   <div id="intro">   <!--selected element -->
+    <!-- after begin -->
+    <h2>Heading</h2>
+    <p>This is a p tag</p>
+    <!-- before end -->
+
+   </div>
+   <!-- after end -->
+
+    <script>
+        let elem = document.getElementById("intro");
+
+        let html = "<h1>New h1 HeadTag</h1>";
+        elem.insertAdjacentHTML("beforebegin",html)
+
+
+        
+
+    </script>
+
+
+
+
+  </body>
+</html>

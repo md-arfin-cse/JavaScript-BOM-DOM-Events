@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Select an element by id in js</title>
+</head>
+<body>
+   <ul>
+    <li>List 1</li>
+    <li id="First">List 2</li>
+    <li>List 3</li>
+   </ul>
+
+   <script>
+    // let elem = document.getElementById("First");
+    // let elem = document.getElementById("First 1"); //return null karega
+    // console.log(elem);
+
+    // let elem = document.getElementById("First")
+    // console.log(elem.innerHTML);
+
+    let elem =document.getElementById("First");
+    elem.innerHTML = "<p> Hello I am Arfin!</p>";
+
+
+   </script>
+</body>
+</html>
